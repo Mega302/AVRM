@@ -1,0 +1,6 @@
+start apcupsd if apcaccess acess failed:
+/etc/init.d/apcupsd restart
+
+/var/lock:
+http://geekswithblogs.net/HumpreyCogay/archive/2011/05/16/centos_httpd_dead_but_subsys_locked_resolve.aspx
+/var/lock/subsys

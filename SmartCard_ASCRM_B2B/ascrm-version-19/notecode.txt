@@ -1,0 +1,28 @@
+  case 5: 
+                                                 g_acpted_CurrencyDetail[g_denomIndex][1]= 0;
+                                                 break;
+					      
+                                          case 10:
+                                                 g_acpted_CurrencyDetail[g_denomIndex][1]= 1;
+                                                 break;
+
+                                          case 20:
+                                                 g_acpted_CurrencyDetail[g_denomIndex][1]= 2;
+                                                 break;
+
+                                          case 50:
+                                                 g_acpted_CurrencyDetail[g_denomIndex][1]= 3;
+                                                 break;
+
+                                          case 100:
+                                                 g_acpted_CurrencyDetail[g_denomIndex][1]= 4;
+                                                 break;
+
+                                          case 500:
+                                                 g_acpted_CurrencyDetail[g_denomIndex][1]= 5;
+                                                 break;
+
+                                          case 1000:
+                                                 g_acpted_CurrencyDetail[g_denomIndex][1]= 6;
+                                                 break;
+

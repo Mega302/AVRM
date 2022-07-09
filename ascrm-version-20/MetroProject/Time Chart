@@ -1,0 +1,79 @@
+	Connect Currency Acceptor:
+
+Time taken for [ currencyAccepter_connectActionPerformed() ] is 27 sec.
+
+Time taken for [ currencyAccepter_connectActionPerformed() ] is 26 sec.
+
+Time taken for [ currencyAccepter_connectActionPerformed() ] is 27 sec.
+
+Time taken for [ currencyAccepter_connectActionPerformed() ] is 28 sec.
+
+	Single Note Validation:
+
+Time taken for [ note_validateActionPerformed() ] is 4 sec.
+
+Time taken for [ note_validateActionPerformed() ] is 4 sec.
+
+Time taken for [ note_validateActionPerformed() ] is 6 sec.
+
+Time taken for [ note_validateActionPerformed() ] is 5 sec.
+
+Depends on User.
+
+	Single Note Escrow:
+
+Time taken for [ note_escrowActionPerformed() ] is 2 sec.
+
+Time taken for [ note_escrowActionPerformed() ] is 2 sec.
+
+Time taken for [ note_escrowActionPerformed() ] is 1 sec.
+
+Time taken for [ note_escrowActionPerformed() ] is 1 sec.
+
+Time taken for [ note_escrowActionPerformed() ] is 2 sec.
+
+	Single Note Return:
+
+Time taken for [ note_returnActionPerformed() ] is 3 sec.
+
+Time taken for [ note_returnActionPerformed() ] is 3 sec.
+
+Time taken for [ note_returnActionPerformed() ] is 3 sec.
+
+	Multinote Denomination:
+
+Time taken for [ enable_denomsActionPerformed() ] is 0 sec.
+
+	Multinote Accept:
+
+Time taken for [ accept_multinotesActionPerformed() ] is 1 sec.
+
+Time taken for [ accept_multinotesActionPerformed() ] is 0 sec.
+
+	Single/Multi Note Return:
+
+Time taken for [ returnNote_movementActionPerformed() ] is 7 sec.
+
+Time taken for [ returnNote_movementActionPerformed() ] is 8 sec.
+
+Time taken for [ returnNote_movementActionPerformed() ] is 5 sec.
+
+It varies on number of notes to be returned.
+
+	Isnote Removed:
+
+Time taken for [ isNoteRemoved_movementActionPerformed() ] is 0 sec.
+
+Time taken for [ isNoteRemoved_movementActionPerformed() ] is 0 sec.
+
+Time taken for [ isNoteRemoved_movementActionPerformed() ] is 0 sec.
+
+	Disconnect Currency Acceptor:
+
+Time taken for [ disconnectCurrencyAccepterActionPerformed() ] is 0 sec.
+
+Time taken for [ disconnectCurrencyAccepterActionPerformed() ] is 0 sec.
+
+Time taken for [ disconnectCurrencyAccepterActionPerformed() ] is 0 sec.
+
+

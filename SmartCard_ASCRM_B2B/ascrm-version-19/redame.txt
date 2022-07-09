@@ -1,0 +1,10 @@
+Vesrion: 1.7
+============
+
+Items incorporates in this version are:
+
+1. Putting JAR version details at the first line of each Log file
+
+2. Writing note acceptor stacking related messages in Log file
+
+3. Optimizing log writing routines for efficient logging

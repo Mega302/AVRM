@@ -1,0 +1,11 @@
+Name: ASCRMGUI_JAR
+Specification-Title: ASCRMGUI_JAR
+Specification-Vendor: Mega Designs Pvt Ltd
+Specification-Version: 1.0
+Built-By: Mega Designs Pvt Ltd
+Build-Time: 2017-11-06 12:10:00
+Main-Class: mega_ascrm.Ascrm
+Class-Path: ASCRMApi.jar
+
+
+

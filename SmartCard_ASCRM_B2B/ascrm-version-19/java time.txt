@@ -1,0 +1,14 @@
+        
+
+
+
+        ///////////////////////////////////////////////////////////////////
+
+        long lStartTime = System.currentTimeMillis();
+	//some tasks
+	long lEndTime = System.currentTimeMillis();
+
+	long difference = lEndTime - lStartTime;
+
+	System.out.println("Elapsed milliseconds: " + difference);
+

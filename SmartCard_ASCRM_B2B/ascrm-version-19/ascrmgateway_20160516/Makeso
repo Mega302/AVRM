@@ -1,0 +1,52 @@
+# This is Makefile for Metro Rail Smart Card Machine Project
+# Designed By Mega Designs. Pvt. Ltd Saltlake Kolkata
+#-----------------------------------------------------------------------------------------
+
+#compiler name variable
+CC= gcc
+
+#-----------------------------------------------------------------------------------------
+
+#Compiler flags Variable
+
+#for an unix executable use this flags
+CFLAGS= -fPIC -c 
+
+
+#-----------------------------------------------------------------------------------------
+
+OUTPUTFLAG= -shared -o libMegaAscrmSmartCardAPIGateWay.so -lrt -lpthread
+
+#library choice 
+#-----------------------------------------------------------------------------------------
+
+#Object File Name Variable
+SmartCardApiObjectFile= delaytime.o atvmlog.o smartcardjni.o
+
+
+
+#----------------------------------Start of Makefile--------------------------------------
+#-----------------------------------------------------------------------------------------
+
+output:SmartCardApi
+
+SmartCardApi:$(SmartCardApiObjectFile)
+	$(CC) $(SmartCardApiObjectFile) $(OUTPUTFLAG)
+
+
+#-----------------------------------------------------------------------------------------
+
+delaytime.o: delaytime.c
+	$(CC)  $(CFLAGS)  delaytime.c
+	
+atvmlog.o: atvmlog.c 
+	$(CC)  $(CFLAGS)  atvmlog.c
+
+smartcardjni.o: smartcardjni.c       
+	$(CC)  $(CFLAGS)  smartcardjni.c
+    
+#-------------------------------------------------------------------------------------
+#-------------------------------------End of------------------------------------------
+#-------------------------------------------------------------------------------------
+
+

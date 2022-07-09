@@ -1,0 +1,10 @@
+Version 1.1:
+1. Change CCTALK Port Open and Close test for all cctalk devices
+2. Coin acceptor deactivate when call enabledenom cause coin acceptor not activated yet
+
+Version 1.3
+1. Printer port input chnaged from string to int.
+2. Printer Status return values changed.
+
+Version 1.4
+1. getDenomination return code 7 in place of other error

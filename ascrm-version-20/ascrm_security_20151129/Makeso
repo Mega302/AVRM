@@ -1,0 +1,73 @@
+#This is Makefile for Indian Rail Automatic Ticket vending Machine Project
+# Designed By Mega Designs. Pvt. Ltd Saltlake Kolkata
+#--------------------------------------------------------------------------------------------------------------
+
+#compiler name variable
+CC =gcc
+
+#---------------------------------------------------------------------------------------------------------------
+
+#Compiler flags Variable
+
+
+#For Make a so use this flag
+
+CFLAGS= -fPIC -c -w
+
+#----------------------------------------------------------------------------------------------------------------
+
+#output flags Variable
+
+#For Make a so use this flag
+
+OUTPUTFLAG= -shared -o libMegaAscrmSecurityAPI.so -lrt -lpthread
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+#Object File Name Variable
+
+CCTALKOBJECTFILES= readini.o atvmlog.o serialc.o cctalkdevs.o upsstatus.o atvmapi.o ascrmsecurityjni.o
+
+
+
+#------------------------Start of Makefile----------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------------
+
+
+output: $(CCTALKOBJECTFILES)
+	$(CC) $(CCTALKOBJECTFILES) $(OUTPUTFLAG)
+
+readini.o: readini.c
+	$(CC)  $(CFLAGS)  readini.c
+	
+atvmlog.o: atvmlog.c 
+	$(CC)  $(CFLAGS)  atvmlog.c
+
+serial.o: serial.c         
+	$(CC)  $(CFLAGS)  serial.c
+
+serialc.o: serialc.c         
+	$(CC)  $(CFLAGS)  serialc.c
+
+serialgen.o: serialgen.c         
+	$(CC)  $(CFLAGS)  serialgen.c
+
+cctalkdevs.o:cctalkdevs.c 
+	$(CC)  $(CFLAGS)  cctalkdevs.c
+
+atvmapi.o: atvmapi.c 
+	$(CC)  $(CFLAGS)  atvmapi.c
+
+upsstatus.o: upsstatus.c 
+	$(CC)  $(CFLAGS)  upsstatus.c
+
+ascrmsecurityjni.o: ascrmsecurityjni.c 
+	$(CC)  $(CFLAGS)  ascrmsecurityjni.c
+
+
+#-------------------------------------End of makefile-----------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------
+
+

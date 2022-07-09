@@ -1,0 +1,35 @@
+ver 1.1:
+>> Change CCTALK Port Open and Close test for all cctalk devices
+>> Coin acceptor deactivate when call enabledenom cause coin acceptor not activated yet
+
+ver 1.3
+>>Printer port input chnaged from string to int.
+>> Printer Status return values changed.
+
+ver 1.4
+>> getDenomination return code 7 in place of other error
+
+ver 1.6.1
+>>Printer Latest Codes Updated
+
+Ver 1.6.2
+>>UPS Log File issue solve Symbol error on AVRM_WriteLog 
+
+Ver 1.6.2.1
+>>Only B2B device Code Updated (no jcm and coin acceptor)
+
+Ver 1.7.0
+>>JCM EnableDenom Apply in run time
+
+Ver 1.7.1
+ >>token Dispenser will stop on found any error regard dispense operation
+ >>Rs 10 two times disabled(Actually it is called by run times from java enabledenom api)
+ 
+ Ver 1.7.2
+ >>GetAcceptedAmount other error solved
+ >>Rs 1 and Rs Coin Solved using global mask
+ >>ReturnAcceptedCurrencies without checking global accepted note and coin table
+
+
+
+

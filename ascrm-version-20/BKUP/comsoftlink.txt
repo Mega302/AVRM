@@ -1,0 +1,31 @@
+How do I create soft link / symbolic link?
+
+Soft links are created with the ln command. For example, the following would create a soft link named link1 to a file named file1, both in the current directory
+$ ln -s file1 link1
+
+To verify new soft link run:
+$ ls -l file1 link1
+
+Sample outputs:
+
+-rw-r--r--  1 veryv  wheel  0 Mar  7 22:01 file1
+lrwxr-xr-x  1 veryv  wheel  5 Mar  7 22:01 link1 -> file1
+
+From the above outputs it is clear that a symbolic link named ‘link1’ contains the name of the file named ‘file1’ to which it is linked. So the syntax is as follows to create a symbolic link in Unix or Linux, at the shell prompt:
+
+$ ln -s {source-filename} {symbolic-filename}
+
+For example create a softlink for /webroot/home/httpd/test.com/index.php as /home/vivek/index.php, enter the following command:
+$ ln -s /webroot/home/httpd/test.com/index.php /home/vivek/index.php
+$ ls -l
+
+Sample outputs:
+
+lrwxrwxrwx 1 vivek  vivek    16 2007-09-25 22:53 index.php -> /webroot/home/httpd/test.com/index.php
+You can now edit the soft link named /home/vivek/index.php and /webroot/home/httpd/test.com/index.php will get updated:
+$ vi /home/vivek/index.php
+
+Your actual file /webroot/home/httpd/test.com/index.php remains on disk even if you deleted the soft link /home/vivek/index.php using the rm command:
+$ rm /home/vivek/index.php ## <--- link gone ##
+## But original/actual file remains as it is ##
+$ ls -l /webroot/home/httpd/test.com/index.php

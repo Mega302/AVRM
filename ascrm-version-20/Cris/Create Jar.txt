@@ -1,0 +1,56 @@
+Create Jar:
+
+all command will be executed outside of Mega folder. Before apply these command copy so file into Mega Folder
+=================================================================================================================
+Step 1:
+Create 'Mega' (anywhere)folder and put Atvmapi.java and Jni so file into Mega Folder then use these command :
+(run command outside of package file Mega)
+
+ For Compile use shell use this command
+
+ >> javac  "Cris/SmartCard.java" "Cris/Security.java" "Cris/Currency.java"
+
+ individual compile:
+
+ javac  "Cris/SmartCard.java" 
+
+ javac  "Cris/Security.java" 
+
+ javac  "Cris/Currency.java"
+ 
+ javac  "Cris/AscrmLog.java"
+ 
+ to store class in different folder use this command
+ >> javac  -d /root/Desktop/class Cris/CashApi.java Cris/Security.java
+ 
+
+===================================================================================================================
+ Step 2: Make Jni headers (If you have alreday jni header must be omittted)
+ >> javah  Cris.SmartCard Cris.Security Cris.Currency
+   (outside of Cris)
+
+individual headers:
+
+ javah  Cris.SmartCard
+
+ javah  Cris.Security 
+ 
+ javah  Cris.Currency
+
+ javah  Cris.AscrmLog
+
+===================================================================================================================
+Step 3: Make Jar
+
+ >> jar -cvf ASCRMApi.jar Cris/*.class "Cris/libMegaAscrmSmartCardAPI.so" "Cris/libMegaAscrmSecurityAPI.so"  "Cris/libMegaAscrmNoteAcceptorAPI.so"
+ 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+javac  "Cris/Currency.java"
+
+javah Cris.Currency
+
+ 
+
+

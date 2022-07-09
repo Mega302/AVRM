@@ -1,0 +1,10 @@
+Name: AVRMAPI_JAR
+Specification-Title: AVRMAPI_JAR
+Specification-Vendor: Mega Designs Pvt Ltd
+Specification-Version: 1.7.3
+Built-By: Mega Designs Pvt Ltd
+Build-Time: 2022-07-01 18:30:00
+Implementation-Title: AVRMApi.jar
+Implementation-Version: 20
+Implementation-Vendor: MEGA 
+
